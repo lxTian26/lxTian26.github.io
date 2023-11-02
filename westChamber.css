@@ -27,3 +27,9 @@ section p{
 .card p{
     text-shadow: none;
 }
+
+@media (max-width: 500px) {
+  main .logo{
+      padding-top: 3vw;
+  }
+}
