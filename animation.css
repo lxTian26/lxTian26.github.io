@@ -19,7 +19,7 @@ header{
 
 @media (max-width: 500px) {
     strong{
-        font-size: 0.8em;
+        font-size: 0.75em;
     }
     main{
         margin-top: 6vw;
