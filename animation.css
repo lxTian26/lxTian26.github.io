@@ -17,14 +17,3 @@ header{
     animation: auto-drop 0.8s;
 }
 
-@media (max-width: 500px) {
-    strong{
-        font-size: 0.78em;
-    }
-    body{
-        background-size: 100% 100%;
-    }
-    main{
-        margin-top: 6vw;
-    }
-}

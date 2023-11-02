@@ -21,3 +21,11 @@ body{
 .main{
     margin-top: 15vh;
 }
+@media (max-width: 500px) {
+  strong{
+      font-size: 0.78em;
+  }
+  main{
+      margin-top: 6vw;
+  }
+}

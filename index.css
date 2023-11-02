@@ -76,3 +76,8 @@ h1 span {
         width: 100%;
     }
 }
+@media (max-width: 500px) {
+    strong{
+        font-size: 0.78em;
+    }
+}
