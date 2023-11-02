@@ -1,0 +1,38 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+body{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(190,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100vh;
+}
+h1, h2, section p{
+    text-shadow: rgb(47, 47, 47) 1px 0 10px;
+}
+.card p{
+    text-shadow: none;
+}
+.poster{
+    margin-left:13vw;
+}
+
+@media (max-width:992px) {
+    .poster{
+        margin-left:0vw;
+    }
+}
