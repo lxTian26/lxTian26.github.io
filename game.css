@@ -35,4 +35,7 @@ h1, h2, section p{
     .poster{
         margin-left:0vw;
     }
+    body{
+        background-size: 100% 100%;
+    }
 }

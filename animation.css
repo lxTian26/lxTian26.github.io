@@ -21,6 +21,9 @@ header{
     strong{
         font-size: 0.75em;
     }
+    body{
+        background-size: 100% 100%;
+    }
     main{
         margin-top: 6vw;
     }
