@@ -23,7 +23,7 @@ body {
   margin-top: 15vh;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   strong {
     font-size: 0.78em;
   }
