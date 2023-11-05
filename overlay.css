@@ -28,6 +28,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
+
 }
 
 .text {
@@ -42,5 +43,8 @@
 }
 
 .imageContainer:hover .overlay {
+  opacity: 1;
+}
+.imageContainer:hover .overlayImg {
   opacity: 1;
 }
