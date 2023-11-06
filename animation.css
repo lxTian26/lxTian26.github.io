@@ -12,9 +12,17 @@
     0% {margin-top: 10%; }
     100% {top: 0%;}
 }
+@keyframes auto-up-sm {
+    0% {margin-top: 20%; }
+    100% {top: 0%;}
+}
 @keyframes auto-up-topics {
     0% {margin-top: 30%; }
     100% {margin-top: 20%;}
+}
+@keyframes auto-up-topics-sm {
+    0% {margin-top: 35vh; }
+    100% {margin-top: 25vh;}
 }
 body{
     animation: fade-in 1s;
@@ -29,4 +37,12 @@ main{
 }
 #topics {
     animation: auto-up-topics 1.2s;
+}
+@media (max-width: 860px) {
+    main{
+        animation: auto-up-sm 1.2s;
+    }
+    #topics {
+        animation: auto-up-topics-sm 1.2s;
+    }
 }
