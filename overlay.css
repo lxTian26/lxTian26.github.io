@@ -42,9 +42,22 @@
   text-shadow: rgb(47, 47, 47) 1px 0 10px;
 }
 
+@keyframes show-and-hide {
+  0% { opacity: 0; }
+
+  40%{ opacity: 0; }
+
+  50%{ opacity: 1; }
+
+  90%{ opacity: 1; }
+
+  100% { opacity: 0; }
+}
+
 .imageContainer:hover .overlay {
   opacity: 1;
 }
-.imageContainer:hover .overlayImg {
-  opacity: 1;
+ .overlayImg {
+  animation: show-and-hide 15s;
+  animation-iteration-count: infinite;
 }
