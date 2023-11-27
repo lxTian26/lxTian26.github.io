@@ -21,12 +21,12 @@ body {
 
 h1,
 h2 {
-  text-shadow: rgb(47, 47, 47, 0.8) 1px 0 10px;
+  text-shadow:0px 0px 7px rgba(0, 0, 0, 0.7);
   /*text-shadow: rgba(255, 255, 255, 0.75) 1px 0 10px;*/
 }
 
 section p {
-  text-shadow: rgb(255, 255, 255, 0.8) 1px 0 10px;
+  text-shadow: rgb(255, 255, 255, 0.8) 0px 0 7px;
 }
 
 .card p {
