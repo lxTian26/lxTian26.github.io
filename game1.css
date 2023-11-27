@@ -49,7 +49,7 @@ h1, h2, section p{
         font-size: 0.78em;
     }
     body{
-        background-image:  linear-gradient(0deg, rgba(192,51,28,1) 20%, rgba(197,63,30,1) 72%, rgba(205,84,34,1) 84%, rgba(213,103,37,1) 90%, rgba(226,135,43,1) 94%, rgba(255,208,56,1) 100%);
+        background-image: linear-gradient(0deg, rgba(192,51,28,1) 60%, rgba(255,208,56,1) 100%);
         background-size: 100% 100%;
     }
     main{
