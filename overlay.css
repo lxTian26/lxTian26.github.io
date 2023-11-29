@@ -58,6 +58,6 @@
   opacity: 1;
 }
  .overlayImg {
-  animation: show-and-hide 15s;
+  animation: show-and-hide 12s;
   animation-iteration-count: infinite;
 }
