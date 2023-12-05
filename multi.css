@@ -23,6 +23,15 @@ body {
   margin-top: 15vh;
 }
 
+.cover-phone{
+  display: none;
+}
+.cover-default{
+  display: block;
+}
+
+
+
 @media (max-width: 766px) {
   strong {
     font-size: 0.78em;
@@ -43,4 +52,12 @@ body {
   body{
     background-size: 100% 100%;
   }
+
+  .cover-phone{
+    display: block;
+  }
+  .cover-default{
+    display: none;
+  }
+  
 }
