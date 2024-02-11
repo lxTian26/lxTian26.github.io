@@ -25,4 +25,3 @@ function reloadPage() {
     } else {}
     
     }
-    reloadPage();
