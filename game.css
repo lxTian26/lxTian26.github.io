@@ -16,10 +16,9 @@ html{
     border: 3px solid #ffffff;
   }
 body{
-    background-image: rgba(0,0,0,1);
+    background-image: linear-gradient(rgba(0,0,0,1) 100%);
+    background-repeat: repeat;
     background-attachment:scroll;
-}
-main{
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(190,0,0,1) 100%);
     background-repeat: no-repeat;
     background-attachment:fixed;
