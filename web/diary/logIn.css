@@ -1,0 +1,38 @@
+#main{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+#button-create{
+    padding-left: 73px;
+    padding-right: 73px;
+}
+#clear{
+    padding-left: 82px;
+    padding-right: 82px;
+}
+#button-login{
+    padding-left: 110px;
+    padding-right:110px;
+}
+#important{
+    padding-left: 45px;
+}
+
+@media (max-width: 1000px) {
+    #breakLine{
+        display: none;
+    }
+}
+
+input{
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 6px;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0%;
+    right:0%;
+}

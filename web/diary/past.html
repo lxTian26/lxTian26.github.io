@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Word Diary - review past</title>
+        <meta name="description" content="review the past.">
+        <link href="past.css" type="text/css" rel="stylesheet">
+        <link href="animations.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+       
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+
+        
+    </head>
+    <body>
+        <!-- Create Navigation bar by using bootstrap library -->
+        <header class="fixed-top">
+            <div class="bacChange navbar  bg-dark shadow-sm">
+                <div class="container">
+                    <a class="btnChange home btn btn-outline-light" href="index.html" role="button">Home</a>
+                    <a class="navbar-brand d-flex align-items-center">
+                        <strong class="textChange text-white">Review Your "Past"</strong>
+                    </a>
+                    <span id="account" class="textChange nav-link text-white"> User: <span id="account-text"></span> </span> 
+                </div>
+            </div>
+        </header>
+
+        <main class="py-5">
+            <div class="py-5 container">
+                <div class="row py-lg-4">
+                    <div class="col-lg-7 col-md-8 mx-auto">
+                        <!-- auto arise text animation-->
+                        <div class="scroll-container first">
+                            <div id="auto" class="scroll-element js-scroll fade-in-bottom">
+                                <p class="textChange1 text-dark fw-light"><b class="hi">Hi, <span id="name"></span></b> <span id="scroll" class="text-secondary">(scroll)</span></p>
+                            </div>
+                        </div>
+                        <!-- scroll arise text animation-->
+                        <div class="scroll-container next">
+                            <div class="scroll-element js-scroll fade-in-bottom">
+                                <p class="textChange1 text-dark contents fw-light">It has been <b><span class="text-primary" id="totalDays"></span></b> days since you first join this web, <b><span class="text-primary" id="firstWord"></span></b> is the first word that comes to your mind.</p>
+                            </div>
+                        </div>
+
+                        <div id="multiAvaliable" class="scroll-container next">
+                            <div class="scroll-element js-scroll fade-in-bottom">
+                                <p class="textChange1 text-dark  contents fw-light">The word <b><span class="text-primary" id="multiWord"></span></b> is so associated with you, you have used it <b><span class="text-primary" id="multiTime"></span></b> times to describe your life or emotions. <span id="over50" >Even takes up <span class="text-primary">at least 50%</span> of your daily vocabulary.</span></p>        
+                            </div>
+                        </div>
+
+                        <div id="container4" class="scroll-container next justify-content-center text-center">
+                            <div class="scroll-element js-scroll fade-in-bottom">
+                                <p class="textChange1 text-dark  contents fw-light">Your personal <b class="text-primary">Word Cloud</b> is created.</p>
+                                <p id="my_dataviz"></p>
+                            </div>
+                        </div>
+                        
+                        <div id="containerLast" class="scroll-container last">
+                            <div class="scroll-element js-scroll fade-in-bottom">
+                                <p class="textChange1 text-dark contents fw-light">Remember to <b class="text-primary">Enjoy your day</b>!!!</p>        
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p class="textChange1 footer text-dark">&copy; Copyright, 2023</p>
+        </footer>
+
+        <script src="user.js"></script>
+        <script src="pastAnalyze.js"></script>
+        <script src="word-cloud.js"></script>
+        <script src="scroll-animation.js"></script>
+        <script src="colorChange.js"></script>
+        <!-- i added sripts here because they only used in this page -->
+        <script> 
+        //display username in nav bar
+            let account = document.querySelector("#account-text");
+            account.innerHTML = userName; 
+            let user = document.querySelector("#name");
+            user.innerHTML = userName; 
+        //change background color if theme changed
+            if (themeName === "dark"){
+                    document.body.style.background = "#000000";
+            }
+        </script>
+    </body>
+</html>

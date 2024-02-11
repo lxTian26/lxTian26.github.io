@@ -1,0 +1,268 @@
+html{
+    cursor: url(mouse/defult.png)35 35,auto;
+    background-image:url(images/image4/background1.jpg);
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    background-attachment: fixed;
+    font-family: fantasy;
+    scroll-behavior:smooth;
+}
+::-webkit-scrollbar {
+    width: 13px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f9fafa;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+body{
+    animation: fade-in1 1s;
+}
+@keyframes fade-in1 {
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
+}
+#goose{
+    position:absolute;
+    height:100vh;
+    left:25%;
+    bottom:0px;
+}
+#text{
+    text-align: justify;
+    display: inline-block;
+    position:relative;
+    font-size: 2vw;
+    padding: 1em;
+    line-height:1.8em;
+    color: azure;
+    border-radius: 3em;
+    margin-right: 45vw;
+    left:88%;
+    top:13vw;
+    backdrop-filter: blur(8px);
+    background-color: rgba(61, 56, 56, 0.759);
+    box-sizing: border-box;
+    box-shadow:0 0px 38px 15px #d9d7d7b7;
+    animation: fade-in 1.5s;
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#next a{
+    text-align: right;
+    font-size: 5vw;
+    color: gray;
+    transition: color 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-right: 1vw;
+    position: absolute;
+    bottom:5%;
+    margin-left: 147%;
+}
+#next-v a{
+    transition: color 0.5s,
+                text-shadow 0.5s;
+}
+#next a:hover, #next-v a:hover{
+    cursor: url(mouse/select.png)35 35, auto;
+    color:black;
+    transition: color 0.5s;
+}
+#next:active, #next-v a:active{
+    cursor: url(mouse/click.png)35 35, auto;
+}
+#text-v, #next-v{
+    display: none;
+}
+p span{
+    font-size: 1.4em;
+    color: rgb(251, 16, 16);
+}
+#logo{
+    position: fixed;
+    right:0;
+    top:0;
+    width:10%;
+    transition: width 0.5s;
+}
+#logo:hover{
+    cursor: url(mouse/select.png)35 35, auto;
+    width:11%;
+    transition: width 0.5s;
+}
+#logo:active{
+    cursor: url(mouse/click.png)35 35, auto;
+}
+@media (max-width: 1280px) {
+    html{
+        width: 100%;
+        height:100%;
+        background-image:url(images/vertical-Backgound/4-1.jpg);
+        background-size:100% 100%;   
+    }
+    body{
+        width: 100%;
+        height:100%;
+        display: grid;
+        grid-template-rows: 90% 58% 1% 10%;
+        grid-template-columns: 10% auto 10%;
+    }
+    #goose{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    #text-v{
+        display: grid;
+        text-align: start;
+        grid-row: 2;
+        grid-column: 2;
+        font-size: 2em;
+        padding: 0.7em;
+        line-height:1.3em;
+        color: azure;
+        border-radius: 3em;
+        background-color: rgba(51, 46, 46, 0.864);
+        box-sizing: border-box;
+        box-shadow:0 0 80px 0px #d4d2d2b7;
+        backdrop-filter: blur(10px);
+    }
+    p span{
+        font-size: larger;
+        color: rgb(232, 0, 0);
+    }
+    #next{
+        display: none;
+    }
+    #next-v{
+        display: inline-grid;
+        grid-row: 4;
+        grid-column: 2;
+        margin-left: 350px;
+    }
+    #next-v a{
+        text-align: right;
+        font-size: 4em;
+        margin-left: 70%;
+        color: rgb(255, 255, 255);
+        text-shadow: #222222 1px 5px 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #next-v a:hover{
+        text-shadow: #fdfdfd 1px 5px 5px;
+        transition: text-shadow 0.5s;
+    }
+    #logo{
+        position: fixed;
+        right:0;
+        top:0;
+        width:15%;
+        transition: width 0.5s;
+    }
+    #logo:hover{
+        width:16%;
+        transition: width 0.5s;
+    }
+}
+@media (max-width: 1080px) {
+    html{
+        width: 100%;
+        height:100%;
+        background-image:url(images/vertical-Backgound/4.png);
+        background-size:100% 100%;   
+    }
+    body{
+        width: 100%;
+        height:100%;
+        display: grid;
+        grid-template-rows: 90% 52% 1% 10%;
+        grid-template-columns: 10% auto 10%;
+    }
+    #goose{
+        display: none;
+    }
+    #text{
+        display: none;
+    }
+    #text-v{
+        display: grid;
+        text-align: start;
+        grid-row: 2;
+        grid-column: 2;
+        font-size: 2.5em;
+        padding: 1em;
+        line-height:1.8em;
+        color: azure;
+        border-radius: 3em;
+        background-color: rgba(51, 46, 46, 0.864);
+        box-sizing: border-box;
+        box-shadow:0 0 80px 0px #d4d2d2b7;
+        backdrop-filter: blur(10px);
+    }
+    p span{
+        font-size: larger;
+        color: rgb(232, 0, 0);
+    }
+    #next{
+        display: none;
+    }
+    #next-v{
+        display: inline-grid;
+        grid-row: 4;
+        grid-column: 2;
+    }
+    #next-v a{
+        text-align: right;
+        font-size: 4em;
+        margin-left: 48%;
+        color: rgb(255, 255, 255);
+        text-shadow: #222222 1px 5px 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    #next-v a:hover{
+        text-shadow: #fdfdfd 1px 5px 5px;
+        transition: text-shadow 0.5s;
+    }
+    #logo{
+        position: fixed;
+        right:0;
+        top:0;
+        width:20%;
+        transition: width 0.5s;
+    }
+    #logo:hover{
+        width:21%;
+        transition: width 0.5s;
+    }
+}
+@media (max-width: 900px) {
+    body{
+        width: 100%;
+        height:100%;
+        display: grid;
+        grid-template-rows: 90% 82% 1% 10%;
+        grid-template-columns: 10% auto 10%;
+    }
+}
+@media (prefers-reduced-motion: reduce){
+    html, #text{
+        animation:none;
+    }
+    #next a, #next-v a, #logo, #logo:hover{
+        transition: none;
+    }
+  }

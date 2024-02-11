@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Home Page">
+        <title>Word Diary - home</title>
+        <link href="index.css" type="text/css" rel="stylesheet">
+        <link href="animations.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/22de7bba6a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Create Navigation bar by using bootstrap library -->
+        <header class="fixed-top">
+            <div class="bacChange navbar bg-dark justify-content-end ">
+                <div class="nav">
+
+                    <div class="textChange navbar-brand d-flex align-items-right text-white">
+                        <strong>Your Personal Word Diary</strong>
+                    </div>
+                    <div class="navOptions"><a id="log-in" class="textChange nav-link text-white" href="logIn.html" role="button">Log In</a></div>
+                    <div class="navOptions"><a id="button-logOut" class="textChange nav-link text-white" role="button">Log Out</a> </div>
+                    <span id="account" class="textChange nav-link text-white"> User: <span id="account-text"></span> </span> 
+                </div>
+            </div>
+            <!-- theme setting -->
+            <div id="setting"><button id="settingBtn"><i id="settingImg" class="fa-solid fa-gear fa-2xl" style="color: #ffffff;"></i></button></div>
+            <br>
+            <div>
+                <a id="dark" class="btnChange btn btn-outline-light theme" role="button">Dark</a> 
+                <a id="light" class="btnChange btn btn-outline-light theme" role="button">Light</a> 
+            </div>
+        </header>
+
+        <main>
+            <div id="backgournd">
+                <!-- auto arise text animation-->
+                <div class="scroll-container">
+                    <div id="auto" class="scroll-element js-scroll fade-in-bottom">
+                        <p class="textChange1 fw-light heading">Hi, <span id="headingName">please <span class="text-primary">Log In</span></span></p>
+                    </div>
+                </div>
+
+                <a class="btnChange1 btn btn-outline-dark" href="logIn.html" id="log-IN">Log In</a>
+                <a class="btnChange1 btn btn-outline-dark" href="past.html" id="review">Review Your "Past"</a>
+                <a class="btnChange1 btn btn-outline-dark" href="add.html" id="add-Word">Add a new Word</a>   
+                <a class="btnChange1 btn btn-outline-dark" href="added.html" id="added">Add a new Word</a>  
+            </div>
+ 
+        </main>
+        
+        <footer>
+            <p class="textChange1 footer text-dark">&copy; Copyright, 2023</p>
+        </footer>
+
+        <script src="text-Effect-script.js"></script>
+        <script src="user.js"></script>
+        <script src="themeChange.js"></script>
+        <script src="colorChange.js"></script>
+
+
+        
+        <!-- i added sripts here because they only used in this page -->
+        <script>
+            //if user log in then display and hide some components
+            if (localStorage.getItem('log in') === 'true'){
+                document.getElementById("setting").style.display = "block";
+                document.getElementById("log-in").style.display = "none";
+                document.getElementById("account").style.display = "block";
+                document.getElementById("button-logOut").style.display = "block";
+                document.getElementById("log-IN").style.display = "none";
+            }else{
+                document.getElementById("log-in").style.display = "block";
+                document.getElementById("account").style.display = "none";
+                document.getElementById("button-logOut").style.display = "none";
+                document.getElementById("add-Word").style.display = "none";
+                document.getElementById("review").style.display = "none";
+                document.getElementById("added").style.display = "none";
+                document.getElementById("setting").style.display = "none";
+            }
+
+            //if user already uploaded a word today then hide the upload page
+            if (localStorage.getItem('log in') === 'true'){
+                if (localStorage.getItem(userName+" Added Today") === 'true'){
+                document.getElementById("add-Word").style.display = "none";
+                document.getElementById("added").style.display = "block";
+                }else{
+                document.getElementById("add-Word").style.display = "block";
+                document.getElementById("added").style.display = "none";  
+                }
+            }   
+
+        //check if log out button clicked
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('button-logOut').addEventListener('click', logOut);
+        });
+
+        //display the username on text area
+        if (localStorage.getItem('log in') === 'true'){
+            let nameTyping = document.querySelector("#headingName"); 
+            let account = document.querySelector("#account-text");   
+            const position = localStorage.getItem('name position');
+            const userName = localStorage.key(position);
+            nameTyping.innerHTML = userName;
+            account.innerHTML = userName;   
+        }
+        
+        //change bacground color when theme changing
+        if (themeName === "dark"){
+            document.getElementById("settingImg").style.color = "#000000";
+           canvas.style.background = "#000000";
+        }
+        </script>
+    </body>
+</html>

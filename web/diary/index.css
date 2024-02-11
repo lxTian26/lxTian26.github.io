@@ -1,0 +1,88 @@
+canvas {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+}
+body {
+    background: #ffffff;
+    margin: 0;
+}
+.heading{
+    position: absolute;
+    text-align: center;
+    left: 0%;
+    right:0%;
+    top:40vh;
+    font-size: 6em;
+}
+.navbar-brand{
+    margin-left: 50px;
+}
+#setting{
+    position: absolute;
+    top: 13px;
+    left: 0.5vw;
+}
+#setting button{
+    background-color: #ffffff00;
+    border: none;
+}
+#dark, #light{
+    position: absolute;
+    top: 8px;
+    left: 4vw;
+    display: none;
+}
+
+#log-IN{
+    position:absolute;
+    text-align: center;
+    top: 65vh;
+    left: 40%;
+    right:40%;
+    backdrop-filter: blur(10px);
+    font-size: 1.3rem;
+}
+
+#review{
+    position:absolute;
+    text-align: center;
+    top: 65vh;
+    left: 35%;
+    right:51%;
+    backdrop-filter: blur(10px);
+}
+
+#add-Word, #added{
+    position:absolute;
+    text-align: center;
+    top: 65vh;
+    left: 51%;
+    right:35%;
+    backdrop-filter: blur(10px);
+}
+
+.footer{
+    position:absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0%;
+    right:0%;
+}
+@media (max-width: 1000px) {
+    .heading{
+        top:20vh;
+    }
+    #review{
+        position:absolute;
+        top: 65vh;
+        left:30%;
+        right:30%;
+    }
+    #add-Word, #added{
+        position:absolute;
+        top: 75vh;
+        left:30%;
+        right:30%;
+    }
+}

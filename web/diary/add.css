@@ -1,0 +1,53 @@
+#remind{
+    position: absolute;
+    text-align: center;
+    left: 18%;
+    right:18%;
+    top:35vh;
+    font-size: 3em;
+}
+
+#review{
+    position:absolute;
+    text-align: center;
+    top: 65vh;
+    right:51%;
+    backdrop-filter: blur(10px);
+}
+
+#home{
+    position:absolute;
+    text-align: center;
+    top: 65vh;
+    left: 51%;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 1000px) {
+    #remind{
+        top:45vh;
+        font-size: 3.5vw;
+    }
+    #review{
+        top:65vh;
+        right:30%;
+        left:30%;
+    }
+    #home{
+        top:75vh;
+        right:30%;
+        left:30%;
+    }
+}
+
+.footer{
+    position:absolute;
+    bottom: 0px;
+    text-align: center;
+    left: 0%;
+    right:0%;
+}
+
+#add-main{
+    padding-top: 20vh;
+}

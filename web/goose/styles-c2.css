@@ -1,0 +1,15 @@
+#a2{
+    font-size: 1.3em;
+    background-color:rgb(183, 175, 167);
+}
+#a2:hover{
+    background-color: #3b3b3b;
+    font-size: 1.4em;
+    transition: font-size 0.5s,
+                background-color 0.5s;
+}
+@media (prefers-reduced-motion: reduce){
+    #a2:hover{
+        transition: none;
+    }
+}

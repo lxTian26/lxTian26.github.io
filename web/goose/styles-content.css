@@ -1,0 +1,344 @@
+html{
+    cursor: url(mouse/defult.png)35 35,auto;
+    background-image:url(images/image1&6/background1.jpg);
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    background-attachment: fixed;
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+::-webkit-scrollbar {
+    width: 13px;
+  }
+
+::-webkit-scrollbar-track {
+    background: auto;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+@media (max-width: 1280px) {
+    html{
+        background-image:url(images/vertical-Backgound/1&6.png);
+        background-size:100% 100%;
+    }
+}
+body{
+    animation: fade-in1 1s;
+}
+@keyframes fade-in1 {
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
+}
+#image1{
+    width:100vw;
+    position: relative;
+    left:-0.9vw;
+    top:0px;
+}
+.topics{
+    position: sticky;
+    top:0.5px;
+    z-index: 1;
+}
+.topics{
+    margin-left: 10%;
+    margin-right: 10%;
+    box-sizing:border-box;
+    box-shadow:0 0 25px 0px #222222b7;
+}
+.topics ul {
+    list-style-type:none;
+    padding:0;
+    display:flex;
+    justify-content:space-around;
+}
+.topics li {
+    width:34%;
+    text-align:center;
+    font-family:cursive;
+    background-color:rgb(145, 137, 130);
+    font-size: 1.5em;
+    text-shadow: #222222 1px 3px 7px;
+}
+@media (max-width: 1080px) {
+    .topics{
+        margin-left: 4.5%;
+        margin-right: 5%;
+    }
+    .topics ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .topics li{
+        width:100%;
+    }
+  }
+.topics a{
+    display:block;
+    text-decoration: none;
+    color:azure;
+    line-height: 3rem;
+}
+.topics a:hover{
+    cursor: url(mouse/select.png)35 35, auto;
+    background-color: #3b3b3b;
+    font-size: 1.4em;
+    transition: font-size 0.5s,
+                background-color 0.5s;
+    text-shadow: #ffffffd8 1px 3px 10px;
+}
+#p1, #p2{
+    box-sizing: grid;
+    grid-template-columns: 90.5% 9.5%;
+}
+#p1, #p2{
+    animation: fade-in 1.5s;
+}
+@keyframes fade-in {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#p1{
+    grid-template-rows: 9.5% auto;
+}
+#p2{
+    grid-template-rows: 7.3% auto;
+}
+#link1, #link2{
+    grid-column: 2 / 3;
+    position: sticky;
+    top:200px;
+}
+#link1 li, #link2 li{
+    list-style: none;
+    box-sizing: border-box;
+    box-shadow:0 0 6px 0px #222222b7;
+    margin-left: -2.3em;
+    padding-left: 0.3em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(91, 85, 80, 0.536)
+}
+#link1 ul li a, #link2 ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: azure;
+    padding-bottom: 0.7em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: #222222 1px 2px 7px;
+}
+#link1 li:hover, #link2 li:hover{
+    background-color: #3b3b3b;
+    cursor: url(mouse/select.png)35 35, auto;
+}
+#link1 a:hover, #link2 a:hover{
+    text-shadow: #ffffff 1px 2px 6px;
+    font-size:1.3em;
+    transition: font-size 0.5s;
+    cursor: url(mouse/select.png)35 35, auto;
+}
+.para{
+    background-color:rgb(234, 229, 223);
+    margin-left: 11%;
+    margin-right: 0.5%;
+    margin-top: -12%;
+    margin-bottom: 35vw;
+    color: rgb(0, 0, 0);
+    font-family:fantasy;
+    box-sizing: border-box;
+    box-shadow:0 0 25px 0px #222222b7;
+    grid-column: 1 / 2;
+}
+.selection div{
+    display: grid;
+}
+/*.selection div{
+    display: none;
+}
+.selection div:target{
+    display: grid;
+}*/
+ul a{
+    font-size:1em;
+}
+h1,h2,h3,h4,h5,h6{
+    text-shadow: #a09999 0px 0px 10px;
+    padding-top: 4vw;
+    font-size: 2em;
+    font-family: fantasy;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+@media (max-width: 1080px) {
+    #p1{
+        grid-template-rows: 100%;
+    }
+    #p2{
+        grid-template-rows: 100%;
+    }
+    #p1 .para{
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: -5%;
+    }
+    #p2 .para{
+        margin-top: 1%;
+        margin-left: 5%;
+        margin-right: -5%;
+    }
+    h1,h2,h3,h4,h5,h6{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    #link1, #link2{
+        display: none;
+    }
+}
+p {
+    text-align: left;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vw;
+    margin-top: 2vw;
+    line-height: 2em;
+    font-size:1.4em;
+}
+p::first-letter{
+    font-size:1.6em;
+}
+a{
+    color: rgb(216, 0, 0);
+}
+p r{
+    color: rgb(203, 10, 3);
+    font-size:1.3em;
+}
+.no-red{
+    color: rgb(0, 0, 0);
+}
+#p2 a{
+    font-size:1.1em;
+    text-decoration: none;
+}
+#p2 a b{
+    text-decoration:underline;
+}
+#p1 a{
+    font-size:1.6em;
+}
+p a:hover{
+    cursor: url(mouse/select.png)35 35, auto;
+}
+p span{
+    margin-top: 1.2vw;
+    display:block;
+}
+@media (max-width: 1080px) {
+    p{
+        text-align: left;
+    }
+}
+.logo, .goose{
+    float:right;
+    position: relative;
+    margin-left: 5%;
+    margin-right:10vw;
+}
+.discribe1, .lose{
+    float:left;
+    position: relative;
+    margin-left: 10vw;
+    margin-right: 5%;
+    margin-left:10vw;
+}
+.logo figcaption, .lose figcaption, .goose figcaption,.discribe1 figcaption {
+    position: absolute;
+    width:100%;
+    text-align: center;
+    bottom:-1.8em;
+    font-size: 1.4em;
+    padding:0.2em;
+    color: #000000;
+    border: double;
+    border-radius: 2em;
+}
+.discribe1 figcaption {
+    font-size: 1em;
+}
+.lose figcaption{
+    font-size: 1.3em;
+}
+#logo:hover{
+    cursor: url(mouse/select.png)35 35, auto;
+}
+#logo:active{
+    cursor: url(mouse/click.png)35 35, auto;
+}
+footer{
+    grid-row:2;
+    background-color: #25242193;
+    margin-left:35vw;
+    margin-right:35vw;
+    margin-top: -100px;
+    height:2.6em;
+    border-radius: 40px;
+}
+footer p{    
+    padding-left:0px;
+    padding-right:0px;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+footer p::first-letter{
+    font-size:1.1em;
+}
+
+@media (max-width: 1080px) {
+    .logo, .goose{
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 23%;
+    }
+    .discribe1, .lose{
+        text-align: center;
+        margin-left: 23%;
+        margin-right: 20%;
+    }
+    .logo figcaption{
+        bottom:-0.8em;
+        padding:0;
+    }
+    .discribe1 figcaption{
+        bottom:-1.2em;
+        padding:0;
+    }
+    .lose figcaption, .goose figcaption{
+        bottom:-1.2em;
+        padding:0;
+        font-size: 1.1em;
+    }
+    footer{
+        margin-left:23vw;
+        margin-right:23vw;
+    }
+  }
+  @media (prefers-reduced-motion: reduce){
+    html, #p1, #p2{
+        animation:none;
+    }
+    .topics a:hover, #link1 a:hover, #link2 a:hover{
+        transition: none;
+    }
+  }

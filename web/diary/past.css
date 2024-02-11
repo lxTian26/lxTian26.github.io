@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+b{
+    text-transform: capitalize;
+}
+
+.hi{
+    font-size: 4.5em;
+}
+#scroll{
+    font-size: 2.5em;
+}
+
+.contents{
+    font-size: 2em;
+}
+
+.footer{
+    text-align: center;
+    left: 0%;
+    right:0%;
+}
+
+.scroll-container {
+    /* I changed the height of each container. */
+    min-height: 450px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.first{
+    height: 70vh;
+}
+.next{
+    height: 20vh;
+}
+.last{
+    height: 0vh;
+}

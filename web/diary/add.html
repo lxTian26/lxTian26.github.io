@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Add a word.">
+        <title>Word Diary - add word</title>
+        <link href="add.css" type="text/css" rel="stylesheet">
+        <link href="animations.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Create Navigation bar by using bootstrap library -->
+        <header class="fixed-top">
+            <div class="bacChange navbar bg-dark shadow-sm">
+                <div class="container">
+                    <a class="btnChange home btn btn-outline-light" href="index.html" role="button">Home</a>
+                    <a class="navbar-brand d-flex align-items-center">
+                        <strong class="textChange text-white">Add a new Word</strong>
+                    </a>
+                    <span id="account" class="textChange nav-link text-white"> User: <span id="account-text"></span> </span> 
+                </div>
+            </div>
+        </header>
+<br>
+    <main  id="add-main">
+        <!-- use bootstrap to create a container to store all main components -->
+        <section class="py-5 container">
+            <div class="row py-lg-4">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <div class="scroll-container">
+                        <div id="auto" class="scroll-element js-scroll fade-in-bottom">
+                            <h1 class="textChange1 fw-light text-left text-dark">Add <span class="text-primary">ONE word</span> that may describe your day, your feeling, or you thoughts...</h1>
+                            <p id="important" class="lead text-secondary"><span class="text-primary">*IMPORTANT!</span> you can Only type <span class="text-primary">Once per day</span>.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <input id="text-Input" class="form-control" type="text" placeholder="Typing Here...">
+                    <br>
+                    <button id="add-btn" type="button" disabled="disabled" class="btnAdd btn btn-dark form-control">Add</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="textChange1 footer text-dark">&copy; Copyright, 2023</p>
+    </footer>
+
+    <!-- i added sripts here because they only used in this page -->
+    <script>
+        //connect the component in html
+        const textInput = document.getElementById('text-Input');
+        const addButton = document.getElementById('add-btn');
+
+        //split space of texts
+        function containsWritespace(string) {
+            return /\s/.test(string);
+        }
+        
+        textInput.addEventListener('input', (event)=>{//when user inputing texts
+ //testing only            console.log(textInput.value);
+
+            // add user personal data to localstarage 
+            let userInputToday = userName+" Added Today";
+            if (localStorage.getItem(userInputToday) === 'true'){ //if user added today
+                    addButton.setAttribute('disabled', 'disabled') //not allowed user upload
+            }else{
+                addButton.removeAttribute('disabled'); //allow user upload
+            }
+
+            for (let i = 0; i < textInput.value.length; i++ ){
+ //testing only                console.log(i);
+                if (containsWritespace(textInput.value)){ //if user inputs contain ' '
+//testing only                    console.log("space");
+                    addButton.setAttribute('disabled', 'disabled')//not allowed user upload
+                }
+            }
+            if (textInput.value.length === 0){ //if user input nothing
+                addButton.setAttribute('disabled', 'disabled')//not allowed user upload
+            }
+        })
+
+        //if button clicked then run the function in javascript
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('add-btn').addEventListener('click', addWord);
+        });
+    </script>
+    <script src="user.js"></script>
+    <script src="colorChange.js"></script>
+    <script> 
+        //display username in nav bar
+        let account = document.querySelector("#account-text");
+        account.innerHTML = userName; 
+
+        //change background color if theme changed
+        if (themeName === "dark"){
+            document.body.style.background = "#000000";
+        }
+    </script>
+    </body>
+</html>
