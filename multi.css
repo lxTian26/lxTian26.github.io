@@ -30,6 +30,13 @@ body {
   display: block;
 }
 
+#carouselIndicatorsH{
+  display: block;
+}
+
+#carouselIndicatorsV{
+  display: none;
+}
 
 
 @media (max-width: 766px) {
@@ -59,5 +66,12 @@ body {
   .cover-default{
     display: none;
   }
+
+  #carouselIndicatorsH{
+    display: none;
+  }
   
+  #carouselIndicatorsV{
+    display: block;
+  }
 }
