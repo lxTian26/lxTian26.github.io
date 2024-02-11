@@ -1,4 +1,4 @@
-.imagecontainer-fluid {
+.imagecontainer {
   position: relative;
   text-align: center;
 }
@@ -54,7 +54,7 @@
   100% { opacity: 0; }
 }
 
-.imagecontainer-fluid:hover .overlay {
+.imagecontainer:hover .overlay {
   opacity: 1;
 }
  .overlayImg {
