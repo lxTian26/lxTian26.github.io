@@ -38,18 +38,7 @@ main{
 #topics {
     animation: auto-up-topics 1.2s;
 }
-@media (max-width: 860px) {
-    main{
-        animation: auto-up-sm 1.2s;
-    }
-    #topics {
-        animation: auto-up-topics-sm 1.2s;
-    }
-    .dropdown-menu .dropdown-submenu {
-        left: 0%;
-        top:100%;
-    }
-}
+
 
 .dropdown-menu li {
     position: relative;
@@ -63,4 +52,17 @@ main{
 }
 .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
+}
+
+@media (max-width: 860px) {
+    main{
+        animation: auto-up-sm 1.2s;
+    }
+    #topics {
+        animation: auto-up-topics-sm 1.2s;
+    }
+    .dropdown-menu .dropdown-submenu {  
+        left: 0%;
+        top:100%;
+    }
 }
