@@ -59,9 +59,5 @@ section{
     #topics {
         animation: auto-up-topics-sm 1.2s;
     }
-    .dropdown-menu .dropdown-submenu {  
-        left: 94%;
-        top: -8.5px;
-        right: auto;
-    }
+
 }
