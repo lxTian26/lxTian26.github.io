@@ -142,9 +142,4 @@ main {
         animation: auto-up-topics-sm 1.2s;
     }
 
-    .dropdown-menu .dropdown-submenu {
-        left: auto;
-        right: 0%;
-        top: 100%;
-    }
 }
