@@ -107,7 +107,7 @@ footer p {
 @media (max-width: 860px) {
     body {
         background-image: url('./image/coversheetV.png'), linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 100%);
-        background-size: 86vw, 100vw;
+        background-size: 87vw, 100vw;
     }
 
     h1 span {
@@ -133,7 +133,7 @@ footer p {
     }
 
     #divSpace {
-        margin-top: 50vh;
+        margin-top: 45vh;
     }
 }
 
