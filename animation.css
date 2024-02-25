@@ -141,10 +141,4 @@ main {
     #topics {
         animation: auto-up-topics-sm 1.2s;
     }
-
-    .dropdown-menu .dropdown-submenu {
-        left: 55%;
-        top: auto;
-        right: auto;
-    }
 }

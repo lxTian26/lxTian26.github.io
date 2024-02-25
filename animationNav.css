@@ -44,7 +44,7 @@ section{
     display: none;
     position: absolute;
     
-    left: 94%;
+    left: 100%;
     top: -8.5px;
     right: auto;
 }
@@ -58,10 +58,5 @@ section{
     }
     #topics {
         animation: auto-up-topics-sm 1.2s;
-    }
-    .dropdown-menu .dropdown-submenu {  
-        left: 55%;
-        top: auto;
-        right: auto;
     }
 }
