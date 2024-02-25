@@ -143,8 +143,8 @@ main {
     }
 
     .dropdown-menu .dropdown-submenu {
-        left: 94%;
-        top: -8.5px;
+        left: 55%;
+        top: auto;
         right: auto;
     }
 }
