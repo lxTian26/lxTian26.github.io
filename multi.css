@@ -1,8 +1,3 @@
-body {
-  background-image: linear-gradient(0deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 100%);
-  background-attachment:scroll;
-}
-
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -40,10 +35,6 @@ body {
 @media (max-width: 766px) {
   strong {
     font-size: 0.78em;
-  }
-
-  main {
-    margin-top: 6vw;
   }
 
   .imgMe {

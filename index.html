@@ -5,12 +5,21 @@
     <title>Portfolio - Home</title>
     <link rel="icon" type="image/png" href="image/icon.png">
     <link href="multi.css" type="text/css" rel="stylesheet">
+    <link href="index-projects.css" type="text/css" rel="stylesheet">
     <link href="overlay.css" type="text/css" rel="stylesheet">
     <link href="animation.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        @media (max-width: 766px) {
+
+            main {
+                margin-top: 6vw;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-dark">
@@ -25,26 +34,39 @@
                             <p></p>
 
                             <div class="dropdown">
-                                <a class="home btn btn-outline-dark" href="index-projects.html" role="button">My
-                                    Projects</a>
                                 <a class="btn btn-outline-dark  dropdown-toggle" href="#" role="button"
-                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">My
+                                    Projects
                                 </a>
 
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="game.html">Game Design &#38
-                                            Development</a>
+                                    <li><a class="dropdown-item" type="button" href="projectsNav.html#game">Game
+                                            Design</a>
                                         <ul class="dropdown-menu dropdown-submenu">
                                             <li>
-                                                <a class="dropdown-item" href="G1-old-dream.html">The old dream of a Fool</a>
+                                                <a class="dropdown-item" href="G1-old-dream.html">The old dream of a
+                                                    Fool</a>
                                             </li>
                                             <li>
                                                 <a class="dropdown-item" href="G2-meadow.html">The King's Meadow</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="web.html">Web Design &#38
-                                            Development</a>
+                                    <li><a class="dropdown-item" type="button"
+                                            href="projectsNav.html#envirnoment">Environment Design
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="e1-shinkansen.html">Travel with
+                                                    Shinkansen</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Tour of Chinese Four Arts</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" type="button" href="projectsNav.html#web">Web
+                                            Design</a>
                                         <ul class="dropdown-menu dropdown-submenu">
                                             <li>
                                                 <a class="dropdown-item" href="w1-goose.html">The Goose Mountain</a>
@@ -54,21 +76,29 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="project.html">Project Design
-                                            &#38 Development</a>
+                                    <li><a class="dropdown-item" type="button" href="projectsNav.html#project">Project
+                                            Design</a>
+
                                         <ul class="dropdown-menu dropdown-submenu">
-                                            <li>
-                                                <a class="dropdown-item" href="p2-shinkansen.html">Travel with Shinkansen</a>
-                                            </li>
+
                                             <li>
                                                 <a class="dropdown-item" href="p1-educloud.html">Educloud</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="p3-western.html">The Western Chamber</a>
+                                                <a class="dropdown-item" href="p2-western.html">The Western Chamber</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a class="dropdown-item" href="graphics.html">Graphics</a></li>
+                                    <li><a class="dropdown-item" type="button" href="projectsNav.html#others">Others</a>
+                                        <ul class="dropdown-menu dropdown-submenu">
+                                            <li>
+                                                <a class="dropdown-item" href="graphics.html">Graphics</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Infernal Inferno Invitational</a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
                                 </ul>
                             </div>
@@ -107,130 +137,162 @@
         <img src="image/coverName-Phone.png" class="img-fluid rounded cover mx-auto cover-phone"
             alt="Portfolio-Lingxuan Tian">
 
-        <div class="container">
-            <h1 class="fw-light text-center text-white">About <span class="text-warning">ME</span></h1>
+        <section class="scroll-container">
+            <section class="scroll-element js-scroll fade-in-top scrolled">
+                <div class="container">
+                    <h1 class="fw-light text-center text-white">About <span class="text-warning">ME</span></h1>
 
-            <div class="row py-lg-3">
-                <div class="col-lg-4  mx-auto">
-                    <div class="imagecontainer">
-                        <img src="image/Me/meOri.JPG" class="img-fluid rounded-end imgMe" alt="Me">
-                        <div class="overlayImg">
-                            <img src="image/Me/me.JPG" class="img-fluid rounded-end imgMe" alt="Me in Yue opera makeup">
+                    <div class="row py-lg-3">
+                        <div class="col-lg-4  mx-auto">
+                            <div class="imagecontainer">
+                                <img src="image/Me/meOri.JPG" class="img-fluid rounded-end imgMe" alt="Me">
+                                <div class="overlayImg">
+                                    <img src="image/Me/me.JPG" class="img-fluid rounded-end imgMe"
+                                        alt="Me in Yue opera makeup">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6  mx-auto d-flex align-items-center">
+                            <ul class="text-white align-middle">
+                                <li>
+                                    <p class="lead text-white" style="--bs-text-opacity: .7;">3rd Year Student in
+                                        University
+                                        of
+                                        York Bsc Interactive Media. </p>
+                                </li>
+                                <li>
+                                    <p class="lead text-white" style="--bs-text-opacity: .7;">Passionate about Chinese
+                                        Opera
+                                        and
+                                        studied Yue opera for over 10 years.</p>
+                                </li>
+
+                                <li>
+                                    <p class="lead text-white" style="--bs-text-opacity: .7;">Bilingual, fluent in
+                                        English
+                                        and
+                                        Mandarin.</p>
+                                </li>
+                                <li>
+                                    <p class="lead text-white" style="--bs-text-opacity: .7;">An creative Designer who
+                                        interested in showcasing the unique
+                                        charm and heritage of Chinese culture through digital media.</p>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6  mx-auto d-flex align-items-center">
-                    <ul class="text-white align-middle">
-                        <li>
-                            <p class="lead text-white" style="--bs-text-opacity: .7;">3rd Year Student in University
-                                of
-                                York Bsc Interactive Media. </p>
-                        </li>
-                        <li>
-                            <p class="lead text-white" style="--bs-text-opacity: .7;">Passionate about Chinese Opera
-                                and
-                                studied Yue opera for over 10 years.</p>
-                        </li>
 
-                        <li>
-                            <p class="lead text-white" style="--bs-text-opacity: .7;">Bilingual, fluent in English
-                                and
-                                Mandarin.</p>
-                        </li>
-                        <li>
-                            <p class="lead text-white" style="--bs-text-opacity: .7;">An creative Designer who
-                                interested in showcasing the unique
-                                charm and heritage of Chinese culture through digital media.</p>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-        <div class="py-5">
-            <br>
-            <div id="carouselIndicatorsH" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><a href="graphics.html">
-                        <img src="image/homepage/nav-4.png" class="d-block w-100 " alt="..."></a>
+                <div class="py-5 carouselDiv">
+                    <div id="carouselIndicatorsH" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsH" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><a href="graphics.html">
+                                    <img src="image/homepage/nav-4.png" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="G1-old-dream.html">
+                                    <img src="image/homepage/nav-3.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="p2-western.html">
+                                    <img src="image/homepage/nav-1.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="w2-diary.html">
+                                    <img src="image/homepage/nav-2.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsH"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsH"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-item"><a href="G1-old-dream.html">
-                        <img src="image/homepage/nav-3.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                    <div class="carousel-item"><a href="p3-western.html">
-                        <img src="image/homepage/nav-1.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                    <div class="carousel-item"><a href="w2-diary.html">
-                        <img src="image/homepage/nav-2.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsH"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsH"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
 
 
 
-            <div id="carouselIndicatorsV" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+                    <div id="carouselIndicatorsV" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselIndicatorsV" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"><a href="graphics.html">
+                                    <img src="image/homepage/navV-4.png" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="G1-old-dream.html">
+                                    <img src="image/homepage/navV-3.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="p2-western.html">
+                                    <img src="image/homepage/navV-1.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                            <div class="carousel-item"><a href="w2-diary.html">
+                                    <img src="image/homepage/navV-2.jpg" class="d-block w-100 " alt="..."></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsV"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsV"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active"><a href="graphics.html">
-                        <img src="image/homepage/navV-4.png" class="d-block w-100 " alt="..."></a>
-                    </div>
-                    <div class="carousel-item"><a href="G1-old-dream.html">
-                        <img src="image/homepage/navV-3.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                    <div class="carousel-item"><a href="p3-western.html">
-                        <img src="image/homepage/navV-1.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                    <div class="carousel-item"><a href="w2-diary.html">
-                        <img src="image/homepage/navV-2.jpg" class="d-block w-100 " alt="..."></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsV"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsV"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </section>
+        </section>
+        <div id="topics" class="container">
+
+            <div class="main">
+                <h1><a class="home btn btn-outline-warning btn-lg" href="projectsNav.html#game" role="button"><span>Game
+                            Design</span></a></h1>
             </div>
 
-        </div>
-        <div class="text-center py-5">
-            <p><a class="btn btn-outline-warning btn-lg" href="index-projects.html" role="button"
-                    style="font-size: 2em;"><span>My Projects</span></a></p>
-        </div>
+            <div class="main">
+                <h1 class="display-1"><a class="home btn btn-outline-warning btn-lg" href="projectsNav.html#envirnoment"
+                        role="button"><span>Environment Design</span></a></h1>
+            </div>
 
+            <div class="main">
+                <h1><a class="home btn btn-outline-warning btn-lg" href="projectsNav.html#web" role="button"><span>Web
+                            Design</span></a></h1>
+            </div>
+
+            <div class="main">
+                <h1><a class="home btn btn-outline-warning btn-lg" href="projectsNav.html#project"
+                        role="button"><span>Project Design</span></a></h1>
+            </div>
+
+            <div class="main">
+                <h1><a class="home btn btn-outline-warning btn-lg" href="projectsNav.html#others"
+                        role="button"><span>Others</span></a>
+                </h1>
+            </div>
+        </div>
+        <div id="divSpace"></div>
     </main>
 
     <footer>
@@ -249,6 +311,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="scroll-Index.js"></script>
 
 </body>
 
