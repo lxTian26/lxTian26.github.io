@@ -142,5 +142,7 @@ main {
         animation: auto-up-topics-sm 1.2s;
     }
 
-
+    .dropdown-menu > li:hover > .dropdown-submenu {
+        display: none;
+    }
 }
